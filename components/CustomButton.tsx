@@ -8,7 +8,7 @@ interface CustomButtonProps {
   containerStyles?: string
 }
 
-const CustomButton = ({ title, onPress, textStyles = '', containerStyles = '' }: CustomButtonProps) => {
+const CustomButton: React.FC<CustomButtonProps> = ({ title, onPress, textStyles = '', containerStyles = '' }) => {
   return (
     <TouchableOpacity
       activeOpacity={0.7}
