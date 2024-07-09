@@ -5,8 +5,10 @@ import { StatusBar } from 'expo-status-bar'
 
 import beachImage from '@/assets/meditation-images/beach.webp'
 import CustomButton from '@/components/CustomButton'
+import { useRouter } from 'expo-router'
 
 const App = () => {
+  const router = useRouter()
   return (
     <View className='flex-1'>
       <ImageBackground source={beachImage} resizeMode='cover' className='flex-1'>
@@ -19,7 +21,7 @@ const App = () => {
               </Text>
             </View>
             <View>
-              <CustomButton title='Get started' onPress={() => console.log('tap')} />
+              <CustomButton title='Get started' onPress={() => router.push('/test')} />
             </View>
             <StatusBar style='light' />
           </SafeAreaView>
