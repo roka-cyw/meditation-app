@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, Text, ImageBackground, SafeAreaView } from 'react-native'
-import { LinearGradient } from 'expo-linear-gradient'
 import { StatusBar } from 'expo-status-bar'
 
 import beachImage from '@/assets/meditation-images/beach.webp'
