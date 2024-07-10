@@ -23,6 +23,7 @@ const AffirmationPractice = () => {
 
         const affirmationsArray = affirmationToStart.text.split('.')
 
+        // Remove the last elem if it's an empty string
         if (affirmationsArray[affirmationsArray.length - 1] === '') {
           affirmationsArray.pop()
         }
